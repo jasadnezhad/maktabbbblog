@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Personal Blog a Blogging Category Flat Bootstarp Responsive Website Template | Home :: w3layouts</title>
+    <link href="stylesheets/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <link href="stylesheets/style.css" rel='stylesheet' type='text/css' />
+    <link href="stylesheets/compiled-4.7.1.min.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords"
+        content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+        Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!----webfonts---->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic' rel='stylesheet'
+        type='text/css'>
+    <!----//webfonts---->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--end slider -->
+    <!--script-->
+</head>
+
+<body class="light-blue-skin">
+    <!-- Navigation -->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+            <!-- SideNav slide-out button -->
+
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto">
+                <p>Welcome to your Dashborad</p>
+            </div>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <!-- <li class="nav-item">
+              <a class="nav-link"><i class="fas fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="far fa-comments"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+            </li> -->
+
+                <li class="nav-item">
+                    <a href="/users/dashboard" class="nav-link"><i class="fas fa-book"></i> <span
+                            class="clearfix d-none d-sm-inline-block">Article</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/profile" class="nav-link"><i class="fas fa-user"></i> <span
+                            class="clearfix d-none d-sm-inline-block">Profile</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/users" class="nav-link"><i class="fas fa-home"></i> <span
+                            class="clearfix d-none d-sm-inline-block">Home</span></a>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /.Navbar -->
+    </header>
+    <!-- Page Content -->
+    <div class="container  mt-6 mb-5 ">
+        <div class="row">
+
+            <!-- Post Content Column -->
+            <div class="col-lg-10 mx-auto pl-0 pr-0 card">
+                <!-- Title -->
+
+                <!-- Author -->
+
+
+                <!-- Preview Image -->
+                <img class="img-fluid rounded" src="imageUploads/<%=information.image%>" alt="">
+
+            </div>
+            <div class="col-lg-10 mx-auto mt-3 p-4 card">
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1 class=" ">
+                            <%=information.title%>
+                        </h1>
+                        <p class="lead ">
+                            posted:
+                            <a class="text-dark" href="#">
+                                <%=personalInformation.userName%></a>
+                        </p>
+
+                        <!-- Date/Time -->
+                        <p class="" style="font-size: 0.8rem">Posted on
+                            <%=information.date%>
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="float-right">
+                            <img id="imgPreviewProduct" src="imageUploads/<%=personalInformation.image%>"
+                                style="width: 129px; " class=" z-depth-1-half avatar-pic"
+                                alt="example placeholder avatar">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="col-lg-10 mx-auto mt-3 p-4 card">
+                <!-- Post Content -->
+                <p class="lead">
+                    <%=information.text%>
+                </p>
+                <hr>
+
+                <!-- Comments Form -->
+                <!--<div class="card my-4">
+                        <h5 class="card-header">Leave a Comment:</h5>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>-->
+
+
+
+            </div>
+
+        </div>
+        <!--Comments-->
+
+        <div id="comment" class="container mx-auto mt-3 p-4 ">
+            <div class="card card-comments mb-3 wow fadeIn">
+                <div class="card-header font-weight-bold"><%=comments.length%> comments</div>
+                <div class="card-body">
+                    <%var flag=1%>
+                    <%for(var i=0;i<comments.length;i++){%>
+                    <%if(comments[i].parentId=="0"){%>
+                    <%flag=1%>
+                    <div id="F<%=i+1%>" class="media d-block d-md-flex mt-4">
+                        <img class="d-flex mb-3 mx-auto " src="imageUploads/<%=comments[i].image%>"
+                            style="width:100px; height:100px" alt="Generic placeholder image">
+                        <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                            <h5 class="mt-0 font-weight-bold">
+                                <%=comments[i].commentName%>
+
+                                <%if(k==1){%>
+                                <button onclick="deletecomment('<%=comments[i]._id%>')"
+                                    class="btn pull-right">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                                <%}%> 
+                                <!-- comments[i]._id==comments[1].parentid -->
+
+                            </h5>
+                            <%=comments[i].commentsText%>
+
+                                <!-- Quick Reply -->
+
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+                    <%}else{%>
+                    <% flag=0;%>
+                    <%}%>
+
+                    <%for(var j=0;j<comments.length;j++){%>
+
+                    <%if(comments[i]._id==comments[j].parentId){%>
+
+                    <div class="container">
+                        <div id="C<%=i+1%>" class="media d-block d-md-flex mt-3">
+                            <img class="d-flex mb-3 mx-auto " src="imageUploads/<%=comments[j].image%>" width="100px"
+                                ;height:"100px" alt="Generic placeholder image">
+                            <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                                <h5 class="mt-0 font-weight-bold">
+                                    <%=comments[j].commentName%>
+                                    <%if(k==1){%>
+                                    <button onclick="deletecomment('<%=comments[j]._id%>')"
+                                        class="btn pull-right">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                    <%}%>
+                                </h5>
+                                <%=comments[j].commentsText%>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <%}%>
+                    <%if((j==(comments.length-1))&&(flag==1)){%>
+
+
+                    <form method="POST" enctype="application/x-www-form-urlencoded" action="/comments/newcomment">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea3">Leave Quick comment</label>
+                            <textarea required name="text" class="form-control" id="exampleFormControlTextarea3"
+                                rows="2"></textarea>
+                        </div>
+                        <input type="hidden" id="idarticlereply" value="<%=information._id%>" name="idarticle">
+                        <input type="hidden" id="" value="<%=comments[i]._id%>" name="parentid">
+                        <div class="text-center mt-4">
+                            <button class="btn btn-info btn-md" type="submit">Post</button>
+                        </div>
+                    </form>
+                    <%}%>
+
+
+
+                    <%}%>
+
+                    <%}%>
+
+
+
+                </div>
+            </div>
+            <!--/.Comments-->
+
+            <!--Reply-->
+            <div class="container">
+                <div class="card mb-3 wow fadeIn">
+                    <div class="card-header font-weight-bold">Leave a reply</div>
+                    <div class="card-body">
+
+                        <!-- Default form reply -->
+                        <form method="POST" action="/comments/newcomment">
+
+                            <!-- Comment -->
+                            <div class="form-group">
+                                <label for="replyFormComment">Your comment</label>
+                                <textarea required name="text" class="form-control" id="replyFormComment" rows="5"></textarea>
+                            </div>
+                            <input type="hidden" id="idarticle" value="<%=information._id%>" name="idarticle">
+                            <input type="hidden" id="" value="0" name="parentid">
+
+                            <!-- Name -->
+
+
+                            <div class="text-center mt-4">
+                                <button class="btn btn-info btn-md" type="submit">Post</button>
+                            </div>
+                        </form>
+                        <!-- Default form reply -->
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.Reply-->
+    </div>
+
+
+    <!-- Footer -->
+    <!-- <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        </div> -->
+    <!-- /.container -->
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="javascripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="javascripts/popper.min.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="javascripts/mdb.min.js" type="text/javascript"></script>
+    <script>
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
+        var params = new URLSearchParams(window.location.search);
+        // $("#idarticle").val(getUrlParameter('id'));
+        // $("#idarticlereply").val(getUrlParameter('id'));
+        // $("#idarticle").val(getUrlParameter('id'));
+
+        function deletecomment(commentid){
+            $.ajax({
+              type :"POST",
+              url:"/Admin/deleteComment",
+              data:{
+                "commentid":commentid,
+                "idarticle":getUrlParameter('id')
+              }
+            }).done(function(res){
+        //         $("#idarticlereply").val(getUrlParameter('id'));
+        // $("#idarticle").val(getUrlParameter('id'));
+             $("#comment").html($(res).find("#comment").html());  
+
+            }).fail(function(xhr){
+   console.log("natonest")
+            });
+        }
+        
+    </script>
+</body>
+
+</html>

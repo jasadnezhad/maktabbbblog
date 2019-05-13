@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MY Web</title>
+    <link href="stylesheets/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <link href="stylesheets/style.css" rel='stylesheet' type='text/css' />
+	<!-- <link href="css/style2.css" rel='stylesheet' type='text/css' /> -->
+	<link href="stylesheets/compiled-4.7.1.min.css" rel='stylesheet' type='text/css'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"
+	/>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!----webfonts---->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+		<link href='http://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+          <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+       
+    <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+		<!--end slider -->
+		<!--script-->
+
+<!---->
+
+</head>
+<body class="light-blue-skin">
+
+  <!--Double navigation-->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+      <!-- SideNav slide-out button -->
+
+      <!-- Breadcrumb-->
+      <div class="breadcrumb-dn mr-auto">
+        <p>Welcome to your Dashboard</p>
+      </div>
+      <ul class="nav navbar-nav nav-flex-icons ml-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link"><i class="fas fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i class="far fa-comments"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+        </li> -->
+
+        <li class="nav-item">
+          <a href="/users/dashboard" class="nav-link"><i class="fas fa-book"></i> <span class="clearfix d-none d-sm-inline-block">Article</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="/profile" class="nav-link"><i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Profile</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="/users" class="nav-link"><i class="fas fa-home"></i> <span class="clearfix d-none d-sm-inline-block">Home</span></a>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- /.Navbar -->
+  </header>
+  <!--/.Double navigation-->
+
+  <!--Main Layout-->
+  <main>
+        <div class="container mt-6" style="color: whitesmoke">
+          <h2>Advanced Double Navigation with fixed SideNav & fixed Navbar:</h2>
+          <br>
+          <h5>1. Fixed side menu, hidden on small devices.</h5>
+          <h5>2. Fixed Navbar. It will always stay visible on the top, even when you scroll down.</h5>
+
+
+
+
+
+<!-- Section: Contact v.3 -->
+<section class="contact-section my-5">
+
+        <!-- Form with header -->
+        <div class="card" style="background-color: #f4f6fc ;color:black;">
+          <h3 class="mt-5 text-center"><i class="fas fa-book pr-2"></i>Make Article:</h3>
+          <!-- Grid row -->
+          <form action="/articles/addnewarticle" method="POST" enctype="multipart/form-data">
+          <div class="row">
+            
+            <!-- Grid column -->
+            <div class="col-lg-7 p-5">
+
+              <div class="card-body form">
+
+                <!-- Header -->
+                
+
+                <!-- Grid row -->
+
+
+                  <!-- Grid column -->
+                  <div class="row">
+                  <div class="col-md-6  mt-4">
+                    <div class="mb-0">
+                            <label for="form-contact-name" class="">Title</label>
+                      <input name="title" type="text"  class="form-control">
+
+                    </div>
+                  </div>
+
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-6 mt-4">
+                    <div class=" mb-0">
+                            <label for="datepicker" class="">Date</label>
+                      <input name="datep" type="text" id="datepicker" class="form-control"/>
+
+                    </div>
+                  </div>
+
+
+                  <!-- Grid column -->
+
+                </div>
+
+                <div class="row">
+
+                  <!-- Grid column -->
+                  <div class="col-md-12 mx-auto mt-4">
+                    <div class=" mb-0">
+                            <label for="Text">Text</label>
+                      <textarea name="Text" type="text"  class="form-control " ></textarea>
+                      
+                    
+                    </div>
+                    
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+              </div>
+
+            </div>
+            <div class="col-lg-5">
+                    <div class="col-md-12">
+                            <div class="file-field">
+                                    <div class="mb-4 mt-6  text-center">
+                                      <img  id="imgPreviewProduct"src="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg" style="width: 250px" class=" z-depth-1-half avatar-pic"
+                                        alt="example placeholder avatar">
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-2">
+                                      <div id="button" class="btn  btn-rounded float-left z-depth-1a" >
+                                        <span>Add image</span>
+                                        <input name="image" id="imageProduct" type="file">
+                                      </div>
+                                    </div>
+                                  </div>
+                      </div>
+            </div>
+         <div class="col-md-6 mx-auto">
+            <div class="text-center mb-5">
+                <button type="submit" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+              </div>
+         </div>
+          </div>
+        </form>
+          
+          <!-- Grid row -->
+
+        </div>
+        <!-- Form with header -->
+
+      </section>
+      <!-- Section: Contact v.3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div style="height: 2000px"></div>
+        </div>
+      </main>
+      <script src="javascripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="javascripts/popper.min.js" type="text/javascript"></script>
+<script src="javascripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="javascripts/mdb.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="javascripts/move-top.js"></script>
+<script type="text/javascript" src="javascripts/easing.js"></script>
+<script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function($) {
+        $('#datepicker').datepicker({ format: 'yyyy/mm/dd' ,
+    uiLibrary: 'bootstrap4'
+});
+$('#datapicker').siblings("span").css("display","none");
+    })
+
+
+function readURL(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#imgPreviewProduct').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#imageProduct").change(function () {
+    readURL(this);
+});
+
+</script>
+
+<script src="CKEditor_HTML/CKEditor_HTML/ckeditor/ckeditor.js"></script>
+<script src="CKEditor_HTML/CKEditor_HTML/ckeditor/adapters/jquery.js"></script>
+
+<script>
+CKEDITOR.replace('Text', {
+language: 'en'
+});
+        $(function () {
+            $('#Text').ckeditor();
+
+           
+        });
+        
+</script>
+
+</body>
